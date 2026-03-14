@@ -1,0 +1,37 @@
+{
+    "language": "Python",
+    "dependency_file": "requirements.txt",
+    "dependencies": ["numpy", "matplotlib", "pandas"],
+    "files": [
+        {
+            "path": "src/rprocess_simulator.py",
+            "description": "Core simulation engine for r-process modeling",
+            "exports": ["class RProcessSimulator", "function run_simulation(dict)"]
+        },
+        {
+            "path": "src/element_analyzer.py",
+            "description": "Tools for analyzing nuclear isotopes and reaction pathways",
+            "exports": ["class ElementAnalyzer", "function get_isotope_properties(str)", "function plot_reaction_chain(str, str)"]
+        },
+        {
+            "path": "src/cli_interface.py",
+            "description": "Command-line interface for running simulations and generating reports",
+            "exports": ["function parse_args()", "function main()"]
+        },
+        {
+            "path": "src/data_processor.py",
+            "description": "Processes and formats simulation data for visualization and reporting",
+            "exports": ["class DataProcessor", "function format_results(dict)", "function export_report(dict, str)"]
+        },
+        {
+            "path": "src/visualization.py",
+            "description": "Handles plotting and visualization of nuclear reaction paths and element abundances",
+            "exports": ["function plot_abundance_distribution(dict)", "function save_plot(str)"]
+        },
+        {
+            "path": "src/__init__.py",
+            "description": "Package initialization with public API exports",
+            "exports": ["class RProcessSimulator", "class ElementAnalyzer", "function run_simulation", "function get_isotope_properties", "function plot_reaction_chain", "function parse_args", "function main", "function format_results", "function export_report", "function plot_abundance_distribution", "function save_plot"]
+        }
+    ]
+}
